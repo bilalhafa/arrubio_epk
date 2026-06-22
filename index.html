@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOUW NAAM | EPK</title>
+    <!-- Tailwind via CDN: Geen installatie of build-stap nodig -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+
+    <!-- 1. HERO SECTIE -->
+    <header class="relative h-96 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://unsplash.com');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative text-center px-4">
+            <h1 class="text-5xl font-black tracking-tight text-white mb-2">ARTIESTENNAAM</h1>
+            <p class="text-xl text-cyan-400 font-medium tracking-wide uppercase">Genre / Functie</p>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-12 space-y-12">
+
+        <!-- 2. DE HOOK (AUDIO / VIDEO EMBED) -->
+        <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-2">Meest recente werk</h2>
+            <div class="aspect-video w-full rounded-xl overflow-hidden shadow-2xl bg-gray-800">
+                <!-- Vervang deze src door je eigen YouTube of Spotify embed link -->
+                <iframe class="w-full h-full" src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 3. BIO -->
+        <section class="space-y-4">
+            <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-2">Biografie</h2>
+            <p class="text-gray-300 leading-relaxed text-lg">
+                Hier komt je korte, krachtige bio. Maximaal twee alinea's. Vertel wie je bent, wat je sound of stijl is, en wat je grootste prestaties tot nu toe zijn. Hou het relevant voor boekers en pers.
+            </p>
+        </section>
+
+        <!-- 4. DOWNLOADS (GOOGLE DRIVE / DROPBOX LINK) -->
+        <section class="space-y-4 bg-gray-800/50 p-6 rounded-xl border border-gray-800">
+            <h2 class="text-2xl font-bold text-white tracking-tight">Persmap Bestanden</h2>
+            <p class="text-gray-400 text-sm">Download hoge resolutie persfoto's, de volledige bio in PDF en de technische rider.</p>
+            <a href="HIER_JE_GOOGLE_DRIVE_OF_DROPBOX_LINK" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-gray-950 font-bold rounded-lg transition-colors shadow-lg">
+                Download Volledige Perskit (ZIP / Drive)
+            </a>
+        </section>
+
+        <!-- 5. CONTACT & SOCIALS -->
+        <section class="space-y-4 text-center py-6">
+            <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-2 text-left">Contact & Boekingen</h2>
+            <p class="text-2xl font-semibold text-cyan-400 selection:bg-cyan-500 selection:text-gray-900">
+                <a href="mailto:info@jouwwebsite.com">info@jouwwebsite.com</a>
+            </p>
+            <p class="text-gray-400">+32 4XX XX XX XX</p>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-xs text-gray-600 border-t border-gray-800">
+        &copy; 2026 ARTIESTENNAAM. Alle rechten voorbehouden.
+    </footer>
+
+</body>
+</html>
