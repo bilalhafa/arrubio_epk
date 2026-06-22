@@ -3,63 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARRUBIO | EPK</title>
-    <!-- Robuuste Tailwind CSS link die altijd direct inlaadt zonder JavaScript of CDN-blokkades -->
-    <link href="https://unpkg.com@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+    <title>ARRUBIO | Electronic Press Kit</title>
 
-    <!-- 1. HERO SECTIE -->
-    <header class="relative h-96 flex items-center justify-center bg-cover bg-center" style="background-image: url('https://unsplash.com');">
-        <!-- Gefixte overlay opacity voor oudere Tailwind versies -->
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div class="relative text-center px-4">
-            <h1 class="text-5xl font-black tracking-tight text-white mb-2">ARRUBIO</h1>
-            <p class="text-xl text-cyan-400 font-medium tracking-wide uppercase">Genre / Functie</p>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0a0a0a;
+        }
+    </style>
+</head>
+
+<body class="text-white font-sans">
+
+    <!-- HERO -->
+    <header class="relative min-h-screen flex items-center justify-center">
+
+        <img
+            src="./images/hero.jpg"
+            alt="ARRUBIO"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+
+            <p class="uppercase tracking-[0.4em] text-cyan-400 mb-4">
+                Official Electronic Press Kit
+            </p>
+
+            <h1 class="text-6xl md:text-8xl font-black mb-6">
+                ARRUBIO
+            </h1>
+
+            <p class="text-xl md:text-2xl text-gray-300 mb-10">
+                Antwerp-based artist blending emotion, energy and storytelling.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+                <a href="#video"
+                   class="bg-cyan-400 text-black px-8 py-4 rounded-xl font-bold hover:bg-cyan-300 transition">
+                    Watch Latest Video
+                </a>
+
+                <a href="#contact"
+                   class="border border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-black transition">
+                    Book ARRUBIO
+                </a>
+
+            </div>
+
         </div>
+
     </header>
 
-    <main class="max-w-3xl mx-auto px-4 py-12 space-y-12">
 
-        <!-- 2. DE HOOK (AUDIO / VIDEO EMBED) -->
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-2">Meest recente werk</h2>
-            <div class="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-2xl bg-gray-800 relative h-96">
-                <!-- Vervang de src door je eigen YouTube of Spotify embed link -->
-                <iframe class="w-full h-full absolute inset-0" src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <main class="max-w-6xl mx-auto px-6 py-24 space-y-24">
+
+        <!-- VIDEO -->
+        <section id="video">
+
+            <h2 class="text-4xl font-bold mb-8">
+                Latest Release
+            </h2>
+
+            <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+
+                <!-- VERVANG ABC123 -->
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/ABC123"
+                    title="ARRUBIO"
+                    allowfullscreen>
+                </iframe>
+
             </div>
+
         </section>
 
-        <!-- 3. BIO -->
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-2">Biografie</h2>
-            <p class="text-gray-300 leading-relaxed text-lg">
-                Hier komt je korte, krachtige bio. Maximaal twee alinea's. Vertel wie je bent, wat je sound of stijl is, en wat je grootste prestaties tot nu toe zijn. Hou het relevant voor boekers en pers.
+
+        <!-- BIO -->
+        <section>
+
+            <h2 class="text-4xl font-bold mb-8">
+                Biography
+            </h2>
+
+            <div class="max-w-3xl">
+
+                <p class="text-gray-300 text-lg leading-9">
+                    ARRUBIO is an emerging artist from Antwerp creating music that
+                    merges raw emotion with contemporary production.
+                    With a distinctive sound and an authentic artistic vision,
+                    ARRUBIO continues to build momentum through captivating releases,
+                    visual storytelling and energetic performances.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HIGHLIGHTS -->
+        <section>
+
+            <h2 class="text-4xl font-bold mb-8">
+                Highlights
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-6">
+
+                <div class="bg-zinc-900 rounded-2xl p-8">
+                    <div class="text-4xl font-black text-cyan-400">
+                        500K+
+                    </div>
+                    <p class="text-gray-400 mt-2">
+                        Streams
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900 rounded-2xl p-8">
+                    <div class="text-4xl font-black text-cyan-400">
+                        20+
+                    </div>
+                    <p class="text-gray-400 mt-2">
+                        Performances
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900 rounded-2xl p-8">
+                    <div class="text-4xl font-black text-cyan-400">
+                        2026
+                    </div>
+                    <p class="text-gray-400 mt-2">
+                        Latest Release
+                    </p>
+                </div>
+
+                <div class="bg-zinc-900 rounded-2xl p-8">
+                    <div class="text-4xl font-black text-cyan-400">
+                        BE
+                    </div>
+                    <p class="text-gray-400 mt-2">
+                        Based in Belgium
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTOS -->
+        <section>
+
+            <h2 class="text-4xl font-bold mb-8">
+                Press Photos
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <img src="./images/photo1.jpg"
+                     class="rounded-2xl aspect-square object-cover"
+                     alt="ARRUBIO">
+
+                <img src="./images/photo2.jpg"
+                     class="rounded-2xl aspect-square object-cover"
+                     alt="ARRUBIO">
+
+                <img src="./images/photo3.jpg"
+                     class="rounded-2xl aspect-square object-cover"
+                     alt="ARRUBIO">
+
+            </div>
+
+        </section>
+
+
+        <!-- DOWNLOADS -->
+        <section class="bg-zinc-900 rounded-3xl p-10">
+
+            <h2 class="text-4xl font-bold mb-4">
+                Press Downloads
+            </h2>
+
+            <p class="text-gray-400 mb-8">
+                Download the complete EPK including high-resolution press photos,
+                full biography and technical rider.
             </p>
-        </section>
 
-        <!-- 4. DOWNLOADS (GOOGLE DRIVE / DROPBOX LINK) -->
-        <section class="space-y-4 bg-gray-800 p-6 rounded-xl border border-gray-800">
-            <h2 class="text-2xl font-bold text-white tracking-tight">Persmap Bestanden</h2>
-            <p class="text-gray-400 text-sm">Download hoge resolutie persfoto's, de volledige bio in PDF en de technische rider.</p>
-            <a href="HIER_JE_GOOGLE_DRIVE_OF_DROPBOX_LINK" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold rounded-lg transition-colors shadow-lg">
-                Download Volledige Perskit (ZIP / Drive)
+            <a href="#"
+               target="_blank"
+               class="inline-block bg-cyan-400 text-black px-8 py-4 rounded-xl font-bold hover:bg-cyan-300 transition">
+
+                Download Press Kit
+
             </a>
+
         </section>
 
-        <!-- 5. CONTACT & SOCIALS -->
-        <section class="space-y-4 text-center py-6">
-            <h2 class="text-2xl font-bold text-white tracking-tight border-b border-gray-800 pb-2 text-left">Contact & Boekingen</h2>
-            <p class="text-2xl font-semibold text-cyan-400">
-                <a href="mailto:info@jouwwebsite.com">info@jouwwebsite.com</a>
-            </p>
-            <p class="text-gray-400">+32 4XX XX XX XX</p>
+
+        <!-- SOCIALS -->
+        <section id="contact">
+
+            <h2 class="text-4xl font-bold mb-8">
+                Contact & Bookings
+            </h2>
+
+            <div class="space-y-4 text-lg">
+
+                <p>
+                    📧 info@arrubio.com
+                </p>
+
+                <p>
+                    📞 +32 XXX XX XX XX
+                </p>
+
+                <div class="flex flex-wrap gap-6 pt-4 text-cyan-400">
+
+                    <a href="#" target="_blank">
+                        Instagram
+                    </a>
+
+                    <a href="#" target="_blank">
+                        TikTok
+                    </a>
+
+                    <a href="#" target="_blank">
+                        Spotify
+                    </a>
+
+                    <a href="#" target="_blank">
+                        YouTube
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer class="text-center py-8 text-xs text-gray-600 border-t border-gray-800">
-        &copy; 2026 ARRUBIO. Alle rechten voorbehouden.
+
+    <footer class="border-t border-zinc-800 py-10 text-center text-gray-500">
+
+        © 2026 ARRUBIO. All rights reserved.
+
     </footer>
 
 </body>
